@@ -9,7 +9,7 @@
 
 3. Run command ```pip install selenium``` into cmd or terminal
 
-3. Download and install [Mozilla Firefox] (https://www.mozilla.org/en-CA/firefox/new/)
+3. Download and install [Mozilla Firefox](https://www.mozilla.org/en-CA/firefox/new/)
 
 4. Download FireFox driver (the engine behind FireFox) from [here](https://github.com/mozilla/geckodriver/releases)
 
