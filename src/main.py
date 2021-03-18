@@ -19,9 +19,9 @@ desired_time = "11:00:00" #KEEP IN THIS FORMAT
 days_in_advance = 3 # MINIMUM 3 DAYS!
 
 
-login = "seca2560@mylaurier.ca"
+login = "EMAIL"
 
-password = "TestPassword123"
+password = "PASSWORD"
 
 ############################################################################################################################
 
