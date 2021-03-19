@@ -15,13 +15,13 @@ import datetime
 # INPUTS: CHANGE TO YOUR HEARTS DESIRE #####################################################################################
 
 bookingType = "FitCentre" #GET STRING FROM TABLE AT https://www.laurierathletics.com/ecommerce/user/home.php
-desired_time = "11:09:00" #KEEP IN THIS FORMAT
+desired_time = "11:00:00" #KEEP IN THIS FORMAT
 days_in_advance = 4 # MINIMUM 3 DAYS!
 
 
-login = "riad6590@mylaurier.ca"
+login = ""
 
-password = "July2020!"
+password = ""
 
 ############################################################################################################################
 

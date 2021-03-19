@@ -8,7 +8,6 @@ Created on Mar 18, 2021
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-# from Email_Module import send_email
 
 
 class BookGymSpot():
