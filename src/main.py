@@ -15,13 +15,13 @@ import datetime
 # INPUTS: CHANGE TO YOUR HEARTS DESIRE #####################################################################################
 
 bookingType = "FitCentre" #GET STRING FROM TABLE AT https://www.laurierathletics.com/ecommerce/user/home.php
-desired_time = "11:00:00" #KEEP IN THIS FORMAT
-days_in_advance = 3 # MINIMUM 3 DAYS!
+desired_time = "11:09:00" #KEEP IN THIS FORMAT
+days_in_advance = 4 # MINIMUM 3 DAYS!
 
 
-login = "EMAIL"
+login = "riad6590@mylaurier.ca"
 
-password = "PASSWORD"
+password = "July2020!"
 
 ############################################################################################################################
 
@@ -53,11 +53,11 @@ test1 = BookGymSpot()
 
 test1.setup_method()
 
-startNow = time_checker("18:48:00")
+startNow = time_checker(desired_time)
 
 if startNow == True:
     test1.test_test1(login, password, dateThreeDaysFromNow, desired_time, bookingType)
 
-test1.teardown_method()
+# test1.teardown_method()
 
 

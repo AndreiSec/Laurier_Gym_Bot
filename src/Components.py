@@ -8,6 +8,7 @@ Created on Mar 18, 2021
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+# from Email_Module import send_email
 
 
 class BookGymSpot():
@@ -29,7 +30,11 @@ class BookGymSpot():
     self.driver.find_element(By.NAME, "UserLogin").send_keys(login)
     self.driver.find_element(By.NAME, "Password").send_keys(password)
     self.driver.find_element(By.NAME, "submit_Login").click()
-    self.driver.find_element(By.LINK_TEXT, "2").click()
+    self.driver.find_element(By.NAME, "DataTables_Table_1_length").click()
+    dropdown = self.driver.find_element(By.NAME, "DataTables_Table_1_length")
+    dropdown.find_element(By.XPATH, "//option[. = 'All']").click()
+    self.driver.find_element(By.CSS_SELECTOR, "#DataTables_Table_1_length option:nth-child(2)").click()
+#     self.driver.find_element(By.LINK_TEXT, "2").click()
     trs = self.driver.find_elements(By.TAG_NAME, "tr") 
     
     for row in trs:
@@ -37,7 +42,7 @@ class BookGymSpot():
         
         for column in tds:
             columnList.append(column.text)
-#         print(columnList)
+        print(columnList)
         
         
         conditionType = False
@@ -70,7 +75,9 @@ class BookGymSpot():
                 self.driver.find_element(By.CSS_SELECTOR, "select:nth-child(27) > option:nth-child(2)").click()
                 self.driver.find_element(By.NAME, "makereservation").click()
                 print("Spot booked: " + columnList[2] + " on " + columnList[3] + " at " + columnList[4])
+#                 send_email("Spot booked: " + columnList[2] + " on " + columnList[3] + " at " + columnList[4])
             except:
+#                 send_email("Booking failed. Whoops")
                 print("Booking failed.")
             
             
